@@ -1,0 +1,11 @@
+services:
+
+  host-user:
+
+    build:
+      context: .
+      args:
+        UID: ${UID}
+        USER: ${USER}
+
+    image: varilink/tools/host-user
